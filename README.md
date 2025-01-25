@@ -13,5 +13,3 @@
 ### 2. Building a slideshow of photos
 ### 3. Accomodating CSS styles to make my webpage look nicer and more user-friendly
 ### 4. Publishing the portfolio site on GitHub
-
-## Acknowledgements of Future Changes: 
