@@ -1,2 +1,5 @@
-# Portfolio_Site
- 
+# Yushuo's Portfolio Site
+## Project Goal:
+## Process: 
+## Key Learnings: 
+## Acknowledgements of Future Changes: 
