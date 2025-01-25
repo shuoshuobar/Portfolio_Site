@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <title>Yushuo's Portfolio</title>
+        <style>
+            body {
+                background-color: #f4f1ec; /* Soft beige background */
+                color: #4f4f4f; /* Muted gray text */
+                font-family: 'Open Sans', sans-serif; /* Modern sans-serif for body text */
+                line-height: 1.8;
+            }
+            h1, h3 {
+                font-family: 'Merriweather', serif; /* Elegant serif font for headers */
+            }
+            h1 {
+                color: #6a89a6; /* Morandi blue */
+                font-size: 2.5rem;
+            }
+            h3 {
+                color: #b58da9; /* Morandi pink */
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                text-align: justify; /* Justify text for professional alignment */
+            }
+            .article-description {
+                text-align: center;
+            }
+            .alert-primary {
+                background-color: #d9d1c7; /* Muted taupe */
+                color: #4f4f4f;
+                border: none;
+                text-align: center; /* Center the alert content */
+                font-weight: bold;
+                padding: 1rem;
+            }
+            a {
+                color: #5e8a80; /* Muted sage green */
+                text-decoration: none;
+                font-weight: 600;
+            }
+            a:hover {
+                color: #826a5c; /* Warm brown on hover */
+            }
+            .btn-light {
+                background-color: #e7d8c9; /* Pale beige */
+                color: #4f4f4f;
+                border: none;
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+                border-radius: 5px;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .btn-light:hover {
+                background-color: #d6c6b8; /* Slightly darker beige for hover */
+            }
+            img {
+                border-radius: 15px; /* Rounded corners */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Gentle shadow */
+                margin-bottom: 1rem;
+            }
+            .carousel-inner img {
+                width: 100%; /* Makes the image fill the width of the container */
+                height: 400px; /* Set a fixed height for uniformity */
+                object-fit: cover; /* Ensures the image fills the container without distorting */
+            }
+            .container {
+                padding: 2rem;
+            }
+            .row {
+                margin-bottom: 3rem;
+            }
+            .col-sm {
+                text-align: center;
+            }
+            .pink-box, .green-box {
+                padding: 1.5rem;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .pink-box {
+                background-color: #cfa9b5; /* Morandi muted pink */
+                color: #4f4f4f;
+            }
+            .green-box {
+                background-color: #b7c5ab; /* Morandi sage green */
+                color: #4f4f4f;
+            }
+            .section-divider {
+                height: 4px;
+                background-color: #826a5c; /* Warm brown divider */
+                border: none;
+                margin: 3rem 0;
+            }
+            .oval-title {
+                background-color: #cfa9b5; /* Pinkish Morandi color */
+                color: white; /* White text */
+                border-radius: 50px; /* Oval shape */
+                padding: 0.5rem 2rem; /* Adjust padding for oval effect */
+                text-align: center;
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 600;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+                margin-bottom: 1rem;
+                font-family: 'Merriweather', serif; /* Elegant serif font for titles */
+            }
+            .publication-list {
+                list-style: none; /* Remove default bullet points */
+                padding: 0;
+                margin-top: 1.5rem;
+            }
+            .publication-list li {
+                background-color: #e7d8c9; /* Soft beige background */
+                margin-bottom: 1rem;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+            }
+            .article-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                color: #5e8a80; /* Muted sage green for links */
+            }
+            .article-title a {
+                text-decoration: none;
+                color: inherit; /* Inherit color from the article-title class */
+            }
+            .article-title a:hover {
+                color: #826a5c; /* Warm brown on hover */
+            }
+            .article-description {
+                font-size: 1rem;
+                color: #4f4f4f; /* Neutral gray for description text */
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body>       
+        <div class="container">
+            <!-- Contact Section -->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="alert alert-primary" role="alert">
+                        Contact me at <a href="mailto:yw4359@columbia.edu">yw4359@columbia.edu</a>!
+                    </div>
+                    <h1 class="text-center">Welcome to Yushuo's Portfolio 🫶🏻</h1>
+                </div>
+            </div>
+            
+            <!-- Section Divider -->
+            <hr class="section-divider">
+
+            <div class="row">
+                <!-- Left Column with Image and Slideshow -->
+                <div class="col-sm-3">
+                    <div class="pink-box position-relative">
+                        <!-- Self Image and Slideshow combined into the same carousel -->
+                        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Self Image as the first image -->
+                                <div class="carousel-item active">
+                                    <img src="self_image.jpg" class="d-block w-100" alt="Self Image" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <!-- At Columbia.JPG as the next image in the carousel -->
+                                <div class="carousel-item">
+                                    <img src="At Columbia.JPG" class="d-block w-100" alt="At Columbia" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Under Red Wall.JPG" class="d-block w-100" alt="Under Red Wall" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Central Park.JPG" class="d-block w-100" alt="Central Park" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="At SoHu.JPG" class="d-block w-100" alt="At SoHu" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Badminton.jpg" class="d-block w-100" alt="Badminton" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Amusement Park.jpg" class="d-block w-100" alt="Amusement Park" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Favourite Restaurant.jpg" class="d-block w-100" alt="Favourite Restaurant" style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Column with About Me Section -->
+                <div class="col-sm-9">
+                    <h1>About Me 🧚‍♀️</h1>
+                    <h3>A Little About Myself</h3>
+                    <p style="font-size: 20px;">This is Yushuo from Beijing, China. Now as a Data Journalism graduate student at the Columbia Journalism School, 
+                        I started as a student journalist since high school and minored in Journalism and Statistics while taking the role as a staff writer at the school newspaper of my undergraduate school. 
+                        This became the main reason for me to consider marry Journalism and Data to pursue my current degree. 
+                        Beyond traditional journalism writing, I am a big fan of longform, magazine or feature writing. 
+                        In my free time, you can find me playing badminton, watching band liveshows and drafting content for my official WeChat account. 
+                    </p>
+                </div>
+            </div>
+            
+
+            <!-- Section Divider -->
+            <hr class="section-divider">
+
+            <!-- Data Projects -->
+            <div class="row">
+                <div class="col-sm">
+                    <h1>My Data Journalism Projects 📒</h1>
+                    <h3>Exploring Stories Through Data</h3>
+                    <p style="font-size: 18px;">From analyzing complex datasets to creating interactive visualizations, my work aims to make data accessible and impactful. Below are some of my recent projects:</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Subproject 1 -->
+                <div class="col-sm-4">
+                    <div class="green-box">
+                        <div class="oval-title">Scraping the Fantuan Delivery App</div>
+                        <p style="font-size: 20.8px;">The project scrapes restaurant delivery data from the Fantuan website using Playwright, processes the data with pandas and serves it through a Flask web application. 
+                           The application provides a paginated interface to explore the restaurant and delivery data.</p>
+                        <p class="text-center"><a class="btn btn-light" target="_new" href="https://final-project-m6rs.onrender.com/fantuan">View Project</a></p>
+                    </div>
+                </div>
+
+                <!-- Subproject 2 -->
+                <div class="col-sm-4">
+                    <div class="green-box">
+                        <div class="oval-title">Mapping the Top 15 Movies by BBC Reviewers</div>
+                        <p style="font-size: 23.1px;">A visualizton of the place of birth of the top-15-movie directors and each of their BBC reviewers. The bigger dots on the map represents a movie, while the smaller dots of the same color refer to reviewers of the movie.</p>
+                        <p class="text-center"><a class="btn btn-light" target="_new" href="https://shuoshuobar.github.io/Movies_Mapping/map_points_template/map.html">View Project</a></p>
+                    </div>
+                </div>
+
+                <!-- Subproject 3 -->
+                <div class="col-sm-4">
+                    <div class="green-box">
+                        <div class="oval-title">Loneliness and Liability: The Risks of Emotional Bonds with AI</div>
+                        <p>AI-powered companionship apps, designed to alleviate loneliness, have sparked serious concerns following tragic incidents where users formed emotional attachments that led to harmful outcomes. As AI companionship grows in popularity, these incidents highlight the urgent need for regulation to ensure these platforms do not replace vital human connections or worsen mental health challenges.</p>
+                        <p class="text-center"><a class="btn btn-light" target="_new" href="https://docs.google.com/document/d/1PxjuiETv6ttPunKT0N4c6ZvaihAtvKyh4P_5Phkjm6k/edit?tab=t.0">View Project</a></p>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Section Divider -->
+ <hr class="section-divider">
+
+ <!-- Publications -->
+ <div class="row">
+     <div class="col-sm">
+         <h1>Publications 🗞️</h1>
+         <h3>Featured Reporting and Stories</h3>
+         <p style="font-size: 18px;">Here are some of my published articles that explore social issues, community changes, features and profiles and me narrating my stories:</p>
+         
+         <ul class="publication-list">
+            <li>
+                <h4 class="article-title"><a href="https://theuptowner.org/despite-legal-and-economic-hurdles-first-legal-cannabis-dispensaries-open-in-inwood-and-washington-heights/" target="_new">Despite Legal and Economic Hurdles, First Legal Cannabis Dispensaries Open in Inwood and Washington Heights</a></h4>
+                <p class="article-description">
+                    After banking difficulties, state delays and lawsuits, Happy Munkey and Sparkboro have opened for business.</p>
+            </li>
+            <li>
+                <h4 class="article-title"><a href="https://theuptowner.org/inwood-sacred-site-to-honor-historic-african-american-burial-ground/" target="_new">Inwood Sacred Site to Honor Historic African American Burial Ground</a></h4>
+                <p class="article-description">Construction on 212th Street near Tenth Avenue will lead to a memorial attached to a shelter for the homeless.</p>
+            </li>
+            <li>
+                 <h4 class="article-title"><a href="https://wfuogb.com/17732/news/they-dont-deserve-to-die-the-downtown-naloxone-vending-machine-and-harm-reduction-in-winston-salem/" target="_new">“They don’t deserve to die:” The downtown naloxone vending machine and harm reduction in Winston-Salem</a></h4>
+                 <p class="article-description">The machine is part of a larger plan to reduce the number of overdose deaths in Forsyth County.</p>
+             </li>
+             <li>
+                 <h4 class="article-title"><a href="https://wfuogb.com/18037/features/visit-the-one-man-show-at-murphys-lunch/" target="_new">Visit the ‘one-man show’ at Murphy’s Lunch</a></h4>
+                 <p class="article-description">Located in Downtown Winston-Salem, this diner is 72 years old and is now fully operated by one man.</p>
+             </li>
+             <li>
+                 <h4 class="article-title"><a href="https://wfuogb.com/15120/arts-and-culture/international-student-struggles-with-identity/" target="_new">International student struggles with identity
+                </a></h4>
+                 <p class="article-description">Code switching – especially when it comes to names – in the international student community causes internal dilemmas.</p>
+             </li>
+             <li>
+                 <h4 class="article-title"><a href="https://wfuogb.com/14623/arts-and-culture/international-student-voices-concerns/" target="_new">International student voices concerns</a></h4>
+                 <p class="article-description">New COVID-19 restrictions put international students into a difficult position.</p>
+             </li>
+             <li>
+                <h4 class="article-title"><a href="https://wfuogb.com/13692/arts-and-culture/life-through-the-lens-yushuo-wang/" target="_new">Life through the lens: Yushuo Wang</a></h4>
+                <p class="article-description">Life through my life when I just embarked my first, but sophomore year of college because of COVID-19.</p>
+            </li>
+            <li>
+                <h4 class="article-title"><a href="https://wfuogb.com/15673/arts-and-culture/college-transition-strains-old-relationships/" target="_new">College transition strains old relationships</a></h4>
+                <p class="article-description">Maintaining friendships proves especially complex for international students.</p>
+            </li>
+         </ul>
+     </div>
+ </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>   
+</html>
